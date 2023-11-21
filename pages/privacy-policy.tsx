@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
 
           <h2 className="text-2xl font-bold mb-3">Data Storage and Security</h2>
           <p className="mb-4">
-            The data collected through our form is stored securely using Formspree, which adheres to GDPR and CCPA compliance. For detailed information on Formspree's security practices, please visit <a href="https://formspree.io/security" className="text-blue-500 hover:text-blue-600" target="_blank" rel="noopener noreferrer">formspree.io/security</a>.
+            The data collected through our form is stored securely using Formspree, which adheres to GDPR and CCPA compliance. For detailed information on Formspree&apos;s security practices, please visit <a href="https://formspree.io/security" className="text-blue-500 hover:text-blue-600" target="_blank" rel="noopener noreferrer">formspree.io/security</a>.
           </p>
 
           <h2 className="text-2xl font-bold mb-3">Updates to This Privacy Policy</h2>

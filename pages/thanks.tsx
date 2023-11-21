@@ -12,7 +12,7 @@ const ThankYou = () => {
         <div className="mx-auto max-w-screen-lg px-4 py-8 text-center">
           <h1 className="text-3xl font-bold mb-4">Thank You!</h1>
           <p className="mb-4 text-xl">
-            We've received your response and we'll be in touch soon!
+            We&apos;ve received your response and we&apos;ll be in touch soon!
           </p>
     
           <Link href="/" className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
