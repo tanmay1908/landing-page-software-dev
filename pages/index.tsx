@@ -33,6 +33,7 @@ export default function Web() {
             </p>
           </div>
         </div>
+        
       </section>
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
@@ -48,7 +49,32 @@ export default function Web() {
             ))}
           </div>
         </div>
+        <div className="flex items-center justify-center">
+        <form id="formdiv" action="https://formspree.io/f/xdorvjeb" method="POST" className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+  <div className="mb-4 flex flex-col md:flex-row md:items-center">
+    <div className="mb-4 md:mr-4 md:mb-0 flex-1">
+      <label htmlFor="name" className="text-gray-600 dark:text-gray-400 inline-block mb-1 md:mb-0 md:mr-2">Your name:</label>
+      <input id="name" name="name" required className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:border-blue-500"/>
+    </div>
+    <div className="mb-4 md:mr-4 md:mb-0 flex-1" >
+      <label htmlFor="email" className="text-gray-600 dark:text-gray-400 inline-block mb-1 md:mb-0 md:mr-2">Your email:</label>
+      <input type="email" id="email" name="email" required className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:border-blue-500" />
+    </div>
+    <div className="flex-1">
+      <button type="submit" className="w-full h-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+        Send
+      </button>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+        </div>
       </section>
+      
       {/* <section className="bg-white dark:bg-gray-900 py-4">
         <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
           <div className="mx-auto place-self-center">
