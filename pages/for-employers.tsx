@@ -56,7 +56,7 @@ export default function Web() {
   </div>
   <form
   id="formdiv"
-  action="https://formspree.io/f/mrgwvdwp"
+  action="https://formspree.io/f/xeqbwbgk"
   method="POST"
   className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
 >
