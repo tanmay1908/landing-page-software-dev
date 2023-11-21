@@ -38,7 +38,7 @@ export default function Web() {
       <section className="bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-4 sm:py-4 lg:px-6">
           <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
+            {EMPLOYER_LP_GRID_ITEMS.map((singleItem) => (
               <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
                 <div className="mb-4 flex h-200 w-200 items-center justify-center rounded-full bg-primary-100 p-1.5 text-blue-700 dark:bg-primary-900">
                   {singleItem.icon && React.cloneElement(singleItem.icon, { style: { height: '150px', width: '150px' } })}
