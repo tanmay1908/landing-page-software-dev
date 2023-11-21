@@ -15,8 +15,10 @@ const ThankYou = () => {
             We've received your response and we'll be in touch soon!
           </p>
     
-          <Link href="/" className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
+          <Link href="/">
+            <a className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
               Return to Home
+            </a>
           </Link>
         </div>
       </main>
