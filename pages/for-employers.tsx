@@ -2,7 +2,7 @@ import { GetServerSidePropsContext } from "next"
 import Head from "next/head"
 import React from 'react'
 import { Button } from "components/Button/Button"
-import { LP_GRID_ITEMS } from "../lp-items"
+import { EMPLOYER_LP_GRID_ITEMS } from "../lp-items"
 
 export default function Web() {
   return (
@@ -29,7 +29,7 @@ export default function Web() {
             </h2>
             <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
               Zero Period enables tech professionals to stay at the cutting-edge. We curate hands-on learning experiences in collaboration with expert industry practitioners.
-              Stay on top of the latest in AI, and never miss out.
+              Help your team stay at the cutting-edge of AI and tech, 10 minutes at a time.
             </p>
           </div>
         </div>
