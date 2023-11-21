@@ -19,7 +19,7 @@ export default function Web() {
         <title>Amica</title>
       </Head>
       <section className="bg-white dark:bg-gray-900 py-4">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
+        <div className="mx-auto grid max-w-screen-xl px-4 py-4 text-center lg:py-4">
           <div className="mx-auto place-self-center">
             <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl text-blue-500">
             Meet Amica.
@@ -36,7 +36,7 @@ export default function Web() {
         
       </section>
       <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-16 lg:px-6">
+        <div className="mx-auto max-w-screen-xl px-4 py-4 sm:py-4 lg:px-6">
           <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
             {LP_GRID_ITEMS.map((singleItem) => (
               <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
@@ -48,45 +48,79 @@ export default function Web() {
               </div>
             ))}
           </div>
+        
         </div>
-        <div className="flex items-center justify-center">
-        <form id="formdiv" action="https://formspree.io/f/xdorvjeb" method="POST" className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
-  <div className="mb-4 flex flex-col md:flex-row md:items-center">
-    <div className="mb-4 md:mr-4 md:mb-0 flex-1">
-      <label htmlFor="name" className="text-gray-600 dark:text-gray-400 inline-block mb-1 md:mb-0 md:mr-2">Your name:</label>
-      <input id="name" name="name" required className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:border-blue-500"/>
+        <div className="flex flex-col items-center justify-center py-8">
+  <div className="mb-4 max-w-2xl text-3xl font-extrabold text-center leading-none tracking-tight dark:text-white md:text-4xl xl:text-5xl">
+    Sign-Up for our waitlist and secure your spot.
+  </div>
+  <form
+  id="formdiv"
+  action="https://formspree.io/f/mrgwvdwp"
+  method="POST"
+  className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md"
+>
+  <div className="mb-4 md:flex md:items-end">
+    <div className="md:mr-4 md:mb-0 flex-grow">
+      <label
+        htmlFor="name"
+        className="text-gray-600 dark:text-gray-400 inline-block mb-1 md:mb-0 md:mr-2"
+      >
+        Your name:
+      </label>
+      <input
+        id="name"
+        name="name"
+        required
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:border-blue-500"
+      />
     </div>
-    <div className="mb-4 md:mr-4 md:mb-0 flex-1" >
-      <label htmlFor="email" className="text-gray-600 dark:text-gray-400 inline-block mb-1 md:mb-0 md:mr-2">Your email:</label>
-      <input type="email" id="email" name="email" required className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:border-blue-500" />
+    <div className="md:mr-4 md:mb-0 flex-grow">
+      <label
+        htmlFor="email"
+        className="text-gray-600 dark:text-gray-400 inline-block mb-1 md:mb-0 md:mr-2"
+      >
+        Your email:
+      </label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        className="w-full px-3 py-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:border-blue-500"
+      />
     </div>
-    <div className="flex-1">
-      <button type="submit" className="w-full h-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue">
-        Send
+    <div className="flex-grow">
+      <button
+        type="submit"
+        className="w-full bg-blue-500 text-white py-2.5 px-3 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue"
+      >
+        Submit
       </button>
     </div>
   </div>
 </form>
 
+</div>
 
-
-
-
-        </div>
       </section>
       
-      {/* <section className="bg-white dark:bg-gray-900 py-4">
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-3xl font-extrabold leading-none tracking-tight dark:text-white md:text-4xl xl:text-5xl">
-            Sign up for the waitlist.
-            </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl">
-              We're launching soon. Sign up for the waitlist to get early access.
-            </p>
-          </div>
-        </div>
-      </section> */}
+      <footer className="bg-white dark:bg-gray-900 py-4">
+  <div className="mx-auto max-w-screen-xl px-4 flex justify-between items-center">
+    <span className="text-gray-600 dark:text-gray-400 text-sm">
+      Copyright &copy; 2023 Tanmay Agarwal and Ansh Khurana. All rights reserved.
+    </span>
+    <a
+      href="/privacy-policy" // Replace with the actual link to your privacy policy
+      className="text-blue-500 hover:text-blue-600 text-sm"
+      target="_blank" // Opens the link in a new tab
+      rel="noopener noreferrer" // Security measure for opening new tabs
+    >
+      Privacy Policy
+    </a>
+  </div>
+</footer>
+
     </>
   )
 }
